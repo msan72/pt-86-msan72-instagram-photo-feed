@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
+    <title>Instagram Photo Feed with Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Instagram Photo Feed with Bootstrap</title>
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
@@ -59,15 +62,119 @@
         </div>
     </nav>
 
+    <!-- Íconos -->
     <div class="icon-links">
-        <!-- Link to various grids -->
-        <a href="ngrid.html" title="See various grids">
-            <i class="bi bi-grid-3x3"></i>
-        </a>
-        <!-- Link to simple grid -->
-        <a href="1grid.html" title="See a grid">
-            <i class="bi bi-square-fill"></i>
-        </a>
+        <a href="#grid1" title="See a grid"><i class="bi bi-grid-1x2"></i></a>
+        <a href="#grid2" title="See various grids"><i class="bi bi-grid-3x3-gap-fill"></i></a>
+    </div>
+
+    <!-- Section container -->
+    <div class="sections">
+        <!-- 1 column -->
+        <div id="grid1" class="section">
+            <div class="container py-4">
+                <div class="row g-4 justify-content-center align-items-center">
+                    <!-- Post 1 -->
+                    <div class="col-md-4">
+                        <div class="insta-card shadow-sm">
+                            <div class="d-flex align-items-center p-2">
+                                <strong>Marcelo1</strong>
+                            </div>
+                            <img src="https://picsum.photos/600/600?random=2" class="insta-img" alt="post">
+                            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
+                                <div class="insta-icons d-flex gap-3">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-chat"></i>
+                                    <i class="bi bi-send"></i>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                            <div class="p-3">
+                                <p class="mb-1"><strong>300 likes</strong></p>
+                                <p class="mb-1"><strong>Marcelo2</strong> Un día increíble 😎</p>
+                                <p class="text-muted mb-0" style="font-size: 0.9rem;">Ver los 20 comentarios</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 column -->
+        <div id="grid2" class="section">
+            <div class="container py-4">
+                <div class="row g-4">
+                    <!-- Post 1 -->
+                    <div class="col-md-4">
+                        <div class="insta-card shadow-sm">
+                            <div class="d-flex align-items-center p-2">
+                                <strong>Marcelo1</strong>
+                            </div>
+                            <img src="https://picsum.photos/600/600?random=1" class="insta-img" alt="post">
+                            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
+                                <div class="insta-icons d-flex gap-3">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-chat"></i>
+                                    <i class="bi bi-send"></i>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                            <div class="p-3">
+                                <p class="mb-1"><strong>120 likes</strong></p>
+                                <p class="mb-1"><strong>Marcelo1</strong> ¡Primer post de prueba!</p>
+                                <p class="text-muted mb-0" style="font-size: 0.9rem;">Ver los 5 comentarios</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 2 -->
+                    <div class="col-md-4">
+                        <div class="insta-card shadow-sm">
+                            <div class="d-flex align-items-center p-2">
+                                <strong>Marcelo1</strong>
+                            </div>
+                            <img src="https://picsum.photos/600/600?random=2" class="insta-img" alt="post">
+                            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
+                                <div class="insta-icons d-flex gap-3">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-chat"></i>
+                                    <i class="bi bi-send"></i>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                            <div class="p-3">
+                                <p class="mb-1"><strong>300 likes</strong></p>
+                                <p class="mb-1"><strong>Marcelo2</strong> Un día increíble 😎</p>
+                                <p class="text-muted mb-0" style="font-size: 0.9rem;">Ver los 20 comentarios</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 3 -->
+                    <div class="col-md-4">
+                        <div class="insta-card shadow-sm">
+                            <div class="d-flex align-items-center p-2">
+                                <strong>Marcelo1</strong>
+                            </div>
+                            <img src="https://picsum.photos/600/600?random=3" class="insta-img" alt="post">
+                            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
+                                <div class="insta-icons d-flex gap-3">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-chat"></i>
+                                    <i class="bi bi-send"></i>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                            <div class="p-3">
+                                <p class="mb-1"><strong>85 likes</strong></p>
+                                <p class="mb-1"><strong>Marcelo3</strong> Probando estilo Instagram 🎉</p>
+                                <p class="text-muted mb-0" style="font-size: 0.9rem;">Ver los 2 comentarios</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap JS -->
